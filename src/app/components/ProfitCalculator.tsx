@@ -72,7 +72,7 @@ export default function ProfitCalculator() {
     <section className="bg-white text-blue2 mt-15 rounded-2xl shadow-lg p-8 w-full max-w-4xl mx-auto mt-16 flex flex-col md:flex-row gap-8">
       <form
         onSubmit={handleSubmit}
-        className="flex-1 space-y-6 border-r border-gray-200 pr-8"
+        className="flex-1 space-y-6 md:border-r md:border-gray-200 md:pr-8"
       >
         <div>
           <label className="block text-sm font-medium mb-1">
