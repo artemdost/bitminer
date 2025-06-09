@@ -83,7 +83,7 @@ export default function HeroSection() {
           </div>
 
           {/* Видео */}
-          <div className="relative w-full max-w-sm aspect-[4/5] rounded-xl overflow-hidden shadow-lg bg-black">
+          <div className="relative w-full sm:max-w-sm aspect-[4/5] rounded-xl overflow-hidden shadow-lg bg-black">
             <video
               src="/video.MOV"
               controls

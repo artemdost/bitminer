@@ -49,6 +49,20 @@ export default function ProductCarousel() {
       perView: 3,
       spacing: 100,
     },
+    breakpoints: {
+      "(max-width: 640px)": {
+        slides: {
+          perView: 1,
+          spacing: 16,
+        },
+      },
+      "(max-width: 1024px)": {
+        slides: {
+          perView: 1,
+          spacing: 32,
+        },
+      },
+    },
     created: (instance) => setSliderInstance(instance),
   });
 
@@ -77,7 +91,7 @@ export default function ProductCarousel() {
           {products.map((product) => (
             <div
               key={product.id}
-              className="keen-slider__slide flex flex-col items-center text-center bg-white rounded-xl p-6 w-[300px] mx-auto"
+              className="keen-slider__slide flex flex-col items-center text-center bg-white rounded-xl p-6 w-full sm:w-[300px] mx-auto"
             >
               <Image
                 src={product.image}
